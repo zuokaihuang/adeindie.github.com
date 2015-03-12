@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Cocos2d-JS</title>
+    <script type="text/javascript" src="cocos2d-js-v3.3-lite.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="game/events.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="game/GameScene.js" charset="UTF-8"></script>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="640"></canvas>
+    <script type="text/javascript">
+          window.onload = function(){
+              // cc.game.onStart = onGameEnter;
+              cc.game.onStart = onStartScene;
+              cc.game.run("gameCanvas");
+          };
+    </script>
+</body>
+</html>
